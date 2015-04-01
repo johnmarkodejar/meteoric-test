@@ -1,0 +1,5 @@
+<template name="myTemplate">
+  <div class="my-template">
+    {{> UI.contentBlock}}
+  </div>
+</template>

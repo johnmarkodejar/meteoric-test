@@ -1,0 +1,16 @@
+<template name="appLayout">
+{{#ionBody}}
+	{{> ionNavBar}}
+	{{#ionNavView}}	
+		{{> yield}}
+	{{/ionNavView}}
+	{{#if currentUser}}
+		{{#ionTabs class="tabs-positive tabs-icon-top"}}
+			{{> ionTab title="Game" href="/" path="/" icon="ios-home"}}
+			{{> ionTab title="Chat" path="chat"  iconOff="ios-star" iconOn="ios-star"}}	
+			{{> ionTab title="Leaderboards" path="leaderboards" iconOff="ios-gear" iconOn="ios-gear"}}
+			{{> ionTab title="Online" path="online" iconOff="ios-search-strong" iconOn="ios-search-strong"}}
+		{{/ionTabs}}
+        {{/if}}
+{{/ionBody}}
+</template>

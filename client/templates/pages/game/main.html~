@@ -1,0 +1,9 @@
+<template name="main">
+{{#ionView}}
+	{{#ionContent class="padding"}}
+		<button class="button button-full  button-balanced">
+		  Play
+		</button>
+	{{/ionContent}}
+{{/ionView}}
+</template>

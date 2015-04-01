@@ -1,0 +1,50 @@
+<template name="games">
+{{#contentFor "headerButtonLeft"}}
+<div id="navigation" class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right">{{> loginButtons}}</ul></div>
+{{/contentFor}}
+{{#contentFor "headerTitle"}}
+  <h1 class="title">Rock Paper Scissor</h1>
+{{/contentFor}}
+{{#ionView}}
+	{{#ionContent class="padding"}}
+		{{#if currentUser}}
+		<div class="list">
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">Player 1</span>
+		    <input type="text" placeholder="John">
+		  </label>
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">Player 2</span>
+		    <input type="text" placeholder="Suhr">
+		  </label>
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">Email</span>
+		    <input type="text" placeholder="john@suhr.com">
+		  </label>
+		  <button class="button button-full button-balanced">
+			Play
+		  </button>
+		</div>
+		<div class="list">
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">Player 1</span>
+		    <input type="text" placeholder="John">
+		  </label>
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">Player 2</span>
+		    <input type="text" placeholder="Suhr">
+		  </label>
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">Email</span>
+		    <input type="text" placeholder="john@suhr.com">
+		  </label>
+		  <button class="button button-full button-balanced">
+			Play
+		  </button>
+		</div>
+		{{else}}
+		<p>Please login to view the game list.</p>
+		{{/if}}
+	{{/ionContent}}
+{{/ionView}}
+</template>

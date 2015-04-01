@@ -1,0 +1,11 @@
+<template name="home">
+ {{#ionTabs class="tabs-positive tabs-icon-top"}}
+  {{> ionTab title="Home" path="home" iconOff="ios-paper" iconOn="ios-paper"}}
+  {{> ionTab title="About" path="about" iconOff="checkmark-circled" iconOn="checkmark-circled"}}
+{{/ionTabs}}
+</template>
+<template name="about">
+  <div class="my-template">
+   This is my first about 
+  </div>
+</template>

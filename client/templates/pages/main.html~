@@ -1,0 +1,7 @@
+<template name="main">
+{{#ionView}}
+	{{#ionContent}}
+		Content For Main
+	{{/ionContent}}
+{{/ionView}}
+</template>

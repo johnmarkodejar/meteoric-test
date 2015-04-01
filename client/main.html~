@@ -1,0 +1,5 @@
+<template name="main">
+{{#contentFor "headerTitle"}}
+<h1 class="title">Trending</h1>
+{{/contentFor}}
+</template>
