@@ -1,12 +1,10 @@
 <template name="leaderboards">
-{{#contentFor "headerButtonLeft"}}
-<div id="navigation" class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-left">{{> loginButtons}}</ul></div>
-{{/contentFor}}
-{{#contentFor "headerTitle"}}
-  <h1 class="title">Rock Paper Scissor</h1>
-{{/contentFor}}
-{{#ionView}}
+	{{#contentFor "headerTitle"}}
+	  <h1 class="title">Rock Paper Scissor</h1>
+	{{/contentFor}}
+	{{#ionView}}
 	{{#ionContent class="padding"}}
+	<ul class="nav">{{> loginButtons}}</ul>
 	{{#if currentUser}}
 	{{#ionTabs class="bar-header"}}
 		{{> ionTab title="Players" path="leaderboard"}}
@@ -15,7 +13,7 @@
 	<div class="item item-divider">
 	    <div class="row">
 		  <div class="col col-70"><strong>Rank #</strong></div>
-		  <div class="col"><strong>Player</strong></div>
+		  <div class="col col-70"><strong>Player</strong></div>
 		  <div class="col col-50"><strong>Points</strong></div>
 	    </div>	
 	</div>
@@ -34,7 +32,7 @@
 	    </div>		
 	</div>
 	{{else}}
-	<p>Please login to view the game list.</p>
+	<p class="login">Please login to view the game list.</p>
 	{{/if}}
 	{{/ionContent}}
 {{/ionView}}

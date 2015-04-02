@@ -1,0 +1,9 @@
+$loading-font-size: 22px;
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons';
+.contact-detail {
+background: $stable;
+}
+.nav a.dropdown-toggle{background:blue; color:#fff;}
+.content p.login{padding:10px; text-align:center; font-weight:bold;}
+.content label.prog{text-align:center; font-weight:bold;}
